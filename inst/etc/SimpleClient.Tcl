@@ -68,7 +68,7 @@ if {[eof $rsSock] == 1} {
 	#  into the socket
 	# i.e fconfigure $esvrSock -blocking off
 	# but this requires some modifications in the R socket server!
-	fconfigure $rsSock -buffering line
+	fconfigure $rsSock -buffering none
 
 	# set up our keyboard read event handler:
 	#   Vector stdin data to the socket
