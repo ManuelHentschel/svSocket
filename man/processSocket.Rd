@@ -64,7 +64,7 @@ evaluators).
 
 To debug the R socket server and inspect how commands send by a client are
 interpreted by this function, use \code{options(debug.Socket = TRUE)}. This
-function uses \code{\link[svMisc:parseText]{svMisc::parseText()}} and \code{\link[svMisc:captureAll]{svMisc::captureAll()}} in order to
+function uses \code{\link[svMisc:parse_text]{svMisc::parseText()}} and \code{\link[svMisc:capture_all]{svMisc::captureAll()}} in order to
 evaluate R code in character string almost exactly the same way as if it was
 typed at the command line of a R console.
 }
@@ -85,7 +85,7 @@ repl()
 }
 \seealso{
 \code{\link[=startSocketServer]{startSocketServer()}}, \code{\link[=sendSocketClients]{sendSocketClients()}}, \code{\link[=parSocket]{parSocket()}},
-\code{\link[svMisc:parseText]{svMisc::parseText()}}, \code{\link[svMisc:captureAll]{svMisc::captureAll()}}
+\code{\link[svMisc:parse_text]{svMisc::parseText()}}, \code{\link[svMisc:capture_all]{svMisc::captureAll()}}
 }
 \concept{stateful socket server interprocess communication}
 \keyword{IO}

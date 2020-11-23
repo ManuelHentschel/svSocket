@@ -4,7 +4,7 @@
 \alias{sendSocketClients}
 \title{Send data to one or more clients through a socket}
 \usage{
-sendSocketClients(text, sockets = "all", serverport = 8888)
+sendSocketClients(text, sockets = "all", serverport = 8888, appendLf = TRUE)
 }
 \arguments{
 \item{text}{the text to send to the client(s).}
